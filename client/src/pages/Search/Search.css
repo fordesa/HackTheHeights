@@ -18,3 +18,7 @@
 .text-container {
   height: max-content;
 }
+
+.content-container div{
+  font-weight: 500;
+}
