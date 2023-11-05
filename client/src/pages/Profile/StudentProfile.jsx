@@ -117,6 +117,7 @@ function About({user}) {
             </ul>
             <button type="submit" class="mx-5 mb-2 btn btn-primary btn-sm">Update Preferences</button>
           </div>
+        </div>
       </div>
     </>
   );
