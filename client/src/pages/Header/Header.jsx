@@ -1,7 +1,9 @@
 import "./Header.css";
 import logo from "./connect.png";
-import {Link} from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
+import LoginButton from "../../components/LoginButton";
+import LogoutButton from "../../components/LogoutButton";
 
 const Header = () => {
   return (
@@ -12,6 +14,7 @@ const Header = () => {
 };
 
 function Nav_Header() {
+  const { isAuthenticated } = useAuth0();
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -36,7 +39,7 @@ function Nav_Header() {
           </div>
         </div>
       </nav>
-    </> 
+    </>
   );
 }
 
