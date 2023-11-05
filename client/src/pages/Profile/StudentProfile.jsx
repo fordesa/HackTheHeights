@@ -17,33 +17,35 @@ const StudentProfile = () => {
 function About({user}) {
   return (
     <>
-      <div className="w-auto topnav">
-        <Link to={"/"} className="link"><img src={homePhoto} className="photos"/></Link>
-        <input className="fields" placeholder="Name"/>
-        <select className="fields"> 
+      <div className="w-100 h-25 pd-1 topnav row align-items-center">
+        <Link to={"/"} className="link col-sm-1 text-center"><img src={homePhoto} className="photos"/></Link>
+        <input className="fields col-sm-4" placeholder="Name"/>
+        <select className="fields col-sm-3"> 
           <option value="BC"> Boston College </option>
           <option value="BU"> Boston University </option>
-          <option value=""> Northeastern </option>
+          <option value="NEU"> Northeastern </option>
         </select>
-        <Link to={""} className="link"> <button className="fields"> Search </button> </Link>
-        <img src={profilePhoto} className="endPhotos"/>
-        <img src={networkPhoto} className="endPhotos"/>
+        <Link to={""} className="link col-sm-2 text-center p-0"> <button className="fields w-90"> Search </button> </Link>
+        <img src={profilePhoto} className="photos col-sm-1"/>
+        <img src={networkPhoto} className="photos col-sm-1"/>
       </div>
-      <div className="h-100 content">
-        <img className="top" src={collegeBanner}/>
+      <div className="col-sm-12 w-auto content">
+        <div className="upper w-100">
+          <img className="top" src={collegeBanner}/>
           <img src={collegePhoto} className="profileImage"/>
-        <div className="h-50 bottom">
-          <span className="w-25 basic">
-            <p> Jane Doe </p>
-            <p> doeja@bc.edu </p>
-            <p> Computer Science </p>
-          </span>
-          <span className="w-25 h-25 schools">
+        </div>
+        <div className="bottom w-100 row">
+          <div className="basic col-sm-3 align-items-center">
+            <p className="info"> Jane Doe <br/>
+               doeja@bc.edu <br/>
+               Computer Science </p>
+          </div>
+          <div className="schools col-sm-4">
             <p> Interested Schools </p>
-          </span>
-          <span className="w-25 preferences">
+          </div>
+          <div className="preferences col-sm-4">
             <p> School Preferences </p>
-          </span>
+          </div>
         </div>
       </div>
     </>
