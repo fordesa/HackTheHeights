@@ -1,0 +1,35 @@
+body{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.logo {
+    font-size: 100px;
+}
+
+.connections {
+    width:100vw;
+    height:100vh;
+    
+}
+
+
+
+.names{
+    font-size: 20px;
+}
+
+.text-container {
+    
+    height: max-content;
+}
+.content-container {
+    height: max-content;
+}
+
+#search-bar input {
+    height: 100px;
+    width: 50px;
+}
+
