@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 // import viteLogo from "/vite.svg";
 import axios from "axios";
 import "./App.css";
+import Header from "./pages/Header/Header"
 import Profile from "./pages/Profile/StudentProfile";
 import Home from "./pages/Home/Home";
 import Registration from "./pages/Login_Registration/Registration";
@@ -13,6 +14,9 @@ axios.defaults.baseURL = "http://localhost:3000";
 const LayOut = () => {
   return (
     <>
+      <div class="top-header">
+        <Header />
+      </div>
       <Outlet />
     </>
   );
@@ -20,7 +24,6 @@ const LayOut = () => {
 
 const router = createBrowserRouter([
   {
-    path: "/",
     element: <LayOut />,
     children: [
       {
@@ -43,7 +46,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-const App = () => {
+export function App() {
   return (
     <>
       <RouterProvider router={router} />
