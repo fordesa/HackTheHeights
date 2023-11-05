@@ -2,7 +2,6 @@ import "./Home.css";
 
 import bellPhoto from "./active.png"
 import chatPhoto from "./chat.png"
-import profilePhoto from "../Profile/profile.jpg"
 import mentorPhoto1 from "./egor.jpg"
 import mentorIcon from "./mentoring.png"
 import videoIcon from "./cam-recorder.png"
@@ -33,41 +32,16 @@ const Home = () => {
 function About() {
   return (
     <>      
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
-                  <img src={bellPhoto} width="30"></img>
-                </a>
-              </li>
-              <li class="nav-item">
-                <Link to="/profile">
-                  <img src={profilePhoto} width="30"></img>
-                </Link>
-              </li>
-              <li class="nav-item">
-              <a class="nav-link" href="#">
-                  <img src={chatPhoto} width="30"></img>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>  
-      </nav>
+      
       <section class="w-100 d-inline-block text-center align-items-center">
-        <div class="pt-5 mt-5">
-          <div><h1 class="logo">Welcome back, Myles</h1></div>
+        <div class="pt-5 m-5 d-flex justify-content-center">
+          <div><h1 class="logo ">Welcome back, Myles</h1></div>
         </div>
-
+        <br/>
         <div class="container my-5">
 
-                      <div class="row height d-flex justify-content-center align-items-center">
-                        <div class="col-md-8">
+                      <div class="d-flex justify-content-center align-items-center">
+                        <div class="col-8">
                           <div class="search">
                             
                             <i class="fa fa-search"></i>
@@ -310,8 +284,8 @@ function About() {
             </div>
             </div>
       
-//       <h1>High School Networking App</h1>
-//       <button onClick={handleLogin}>Login</button>
+{/* //       <h1>High School Networking App</h1>
+//       <button onClick={handleLogin}>Login</button> */}
     </>
   );
 }
