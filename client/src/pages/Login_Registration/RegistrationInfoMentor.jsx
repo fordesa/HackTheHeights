@@ -7,8 +7,6 @@ const Registration = () => {
     </main>
   );
 };
-/* Student: Name, Propspective Major, Schools, Hometown, Grad Year
-  Mentor:  Availability, Involvement, Major, Name*/
 function Registration_Info_Mentor() {
   return (
     <>
