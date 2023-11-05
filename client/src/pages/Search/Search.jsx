@@ -25,11 +25,11 @@ function Search_Page() {
       <div class="user-info-section d-flex align-items-center my-4 w-100 justify-content-between">
         <img class="rounded-circle" src="https://picsum.photos/id/64/90/90"/>
         <div class="text-container col-4">
-          <p class="p-0 m-0">First Last, <br />
+          <p class="p-0 m-0 lh-1">First Last, <br />
           Student at <b>Boston College</b></p>
         </div>
         <div class="col-2">
-          <p>Open to: <br />
+          <p class="lh-1">Open to: <br />
           <b>Essay Reading</b><br />
           <b>General Advice</b></p>
         </div>
@@ -43,11 +43,11 @@ function Search_Page() {
       <div class="user-info-section d-flex align-items-center my-4 w-100 justify-content-between">
         <img class="rounded-circle" src="https://picsum.photos/id/65/90/90"/>
         <div class="text-container col-4">
-          <p class="p-0 m-0">First Last, <br />
+          <p class="p-0 m-0 lh-1">First Last, <br />
           Student at <b>Boston College</b></p>
         </div>
         <div class="col-2">
-          <p>Open to: <br />
+          <p class="lh-1">Open to: <br />
           <b>All</b></p>
         </div>
         <button type="submit" class="btn btn-xl btn-primary ">
@@ -60,11 +60,11 @@ function Search_Page() {
       <div class="user-info-section d-flex align-items-center my-4 w-100 justify-content-between">
         <img class="rounded-circle" src="https://picsum.photos/id/342/90/90"/>
         <div class="text-container col-4">
-          <p class="p-0 m-0">First Last, <br />
+          <p class="p-0 m-0 lh-1">First Last, <br />
           Student at <b>Boston College</b></p>
         </div>
         <div class="col-2">
-          <p>Open to: <br />
+          <p class="lh-1">Open to: <br />
           <b>Essay Reading</b><br />
           <b>General Advice</b></p>
         </div>
@@ -78,11 +78,11 @@ function Search_Page() {
       <div class="user-info-section d-flex align-items-center my-4 w-100 justify-content-between">
         <img class="rounded-circle" src="https://picsum.photos/id/177/90/90"/>
         <div class="text-container col-4">
-          <p class="p-0 m-0">First Last, <br />
+          <p class="p-0 m-0 lh-1">First Last, <br />
           Student at <b>Boston College</b></p>
         </div>
         <div class="col-2">
-          <p>Open to: <br />
+          <p class="lh-1">Open to: <br />
           <b>Essay Reading</b><br />
           <b>General Advice</b></p>
         </div>
@@ -96,11 +96,11 @@ function Search_Page() {
       <div class="user-info-section d-flex align-items-center my-4 w-100 justify-content-between">
         <img class="rounded-circle" src="https://picsum.photos/id/331/90/90"/>
         <div class="text-container col-4">
-          <p class="p-0 m-0">First Last, <br />
+          <p class="p-0 m-0 lh-1">First Last, <br />
           Student at <b>Boston College</b></p>
         </div>
         <div class="col-2">
-          <p>Open to: <br />
+          <p class="lh-1">Open to: <br />
           <b>Essay Reading</b><br />
           <b>General Advice</b></p>
         </div>
@@ -114,11 +114,11 @@ function Search_Page() {
       <div class="user-info-section d-flex align-items-center my-4 w-100 justify-content-between">
         <img class="rounded-circle" src="https://picsum.photos/id/338/90/90"/>
         <div class="text-container col-4">
-          <p class="p-0 m-0">First Last, <br />
+          <p class="p-0 m-0 lh-1">First Last, <br />
           Student at <b>Boston College</b></p>
         </div>
         <div class="col-2">
-          <p>Open to: <br />
+          <p class="lh-1">Open to: <br />
           <b>Essay Reading</b><br />
           <b>General Advice</b></p>
         </div>

@@ -37,11 +37,11 @@ function About({user}) {
           <div className="shadow bottom col card mx-2 p-1 h-auto">
             <span className="basic">
               <h4 class="text-center">Information</h4>
-              <p class="mb-3"><b>Name:<br /> </b>Jane Doe </p>
-              <p class="mb-3"><b>Email:<br /> </b>doeja@bc.edu </p>
-              <p><b>Major Interest:<br /> </b>Computer Science </p>
+              <p class="mb-3 lh-1"><b>Name:<br /> </b>Jane Doe </p>
+              <p class="mb-3 lh-1"><b>Email:<br /> </b>doeja@bc.edu </p>
+              <p class="lh-1"><b>Major Interest:<br /> </b>Computer Science </p>
             </span>
-            <button type="submit" class=" mx-5 mb-2 btn btn-primary btn-sm">Edit Information</button>
+            <button type="submit" class=" mx-5 mb-2 mt-2 btn btn-primary btn-sm">Edit Information</button>
           </div>
 
           <div className="col-1"></div>
