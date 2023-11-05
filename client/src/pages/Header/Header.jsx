@@ -2,8 +2,6 @@ import "./Header.css";
 import logo from "./connect.png";
 import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
-import LoginButton from "../../components/LoginButton";
-import LogoutButton from "../../components/LogoutButton";
 
 const Header = () => {
   return (
@@ -35,6 +33,9 @@ function Nav_Header() {
             <form className="d-flex">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
               <Link to={"/search"}> <button className="btn btn-outline-success" type="submit">Search</button> </Link>
+            </form>
+            <form className="d-flex">
+              <Link to={"/"}></Link>
             </form>
           </div>
         </div>
