@@ -10,7 +10,8 @@ import Home from "./pages/Home/Home";
 import Registration from "./pages/Login_Registration/Registration";
 import Search from "./pages/Search/Search";
 import MentorProfile from "./pages/Profile/MentorProfile";
-import Registration_Info from "./pages/Login_Registration/RegistrationInfo"
+import Registration_Info from "./pages/Login_Registration/RegistrationInfoStudent"
+import Mentor_Registration_Info from "./pages/Login_Registration/RegistrationInfoMentor"
 axios.defaults.baseURL = "http://localhost:3000";
 
 const LayOut = () => {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "/registration_info", 
         element: <Registration_Info />,
+      },
+      {
+        path: "/registration_info_mentor", 
+        element: <Mentor_Registration_Info />
       },
     ],
   },
