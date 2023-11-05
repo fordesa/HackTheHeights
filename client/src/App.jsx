@@ -9,12 +9,15 @@ import Profile from "./pages/Profile/StudentProfile";
 import Home from "./pages/Home/Home";
 import Registration from "./pages/Login_Registration/Registration";
 import Search from "./pages/Search/Search";
+import MentorProfile from "./pages/Profile/MentorProfile";
+import Registration_Info from "./pages/Login_Registration/RegistrationInfoStudent"
+import Mentor_Registration_Info from "./pages/Login_Registration/RegistrationInfoMentor"
 axios.defaults.baseURL = "http://localhost:3000";
 
 const LayOut = () => {
   return (
     <>
-      <div class="top-header">
+      <div className="top-header">
         <Header />
       </div>
       <Outlet />
@@ -41,6 +44,18 @@ const router = createBrowserRouter([
       {
         path: "/search",
         element: <Search />,
+      },
+      {
+        path: "/mentorProfile", 
+        element: <MentorProfile />,
+      },
+      {
+        path: "/registration_info", 
+        element: <Registration_Info />,
+      },
+      {
+        path: "/registration_info_mentor", 
+        element: <Mentor_Registration_Info />
       },
     ],
   },

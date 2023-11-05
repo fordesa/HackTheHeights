@@ -23,7 +23,7 @@ function About({user}) {
         <select className="fields"> 
           <option value="BC"> Boston College </option>
           <option value="BU"> Boston University </option>
-          <option value=""> Northeastern </option>
+          <option value="NEU"> Northeastern </option>
         </select>
         <Link to={"/search"} className="link"> <button className="fields"> Search </button> </Link>
         <img src={profilePhoto} className="endPhotos"/>
@@ -36,86 +36,86 @@ function About({user}) {
 
           <div className="shadow bottom col card mx-2 p-1 h-auto">
             <span className="basic">
-              <h4 class="text-center">Information</h4>
-              <p class="mb-3"><b>Name:<br /> </b>Jane Doe </p>
-              <p class="mb-3"><b>Email:<br /> </b>doeja@bc.edu </p>
-              <p><b>Major Interest:<br /> </b>Computer Science </p>
+              <h4 className="text-center">Information</h4>
+              <p className="mb-3 lh-1"><b>Name:<br /> </b>Jane Doe </p>
+              <p className="mb-3 lh-1"><b>Email:<br /> </b>doeja@bc.edu </p>
+              <p className="lh-1"><b>Major Interest:<br /> </b>Computer Science </p>
             </span>
-            <button type="submit" class=" mx-5 mb-2 btn btn-primary btn-sm">Edit Information</button>
+            <button type="submit" className=" mx-5 mb-2 mt-2 btn btn-primary btn-sm">Edit Information</button>
           </div>
 
           <div className="col-1"></div>
 
           <div className="shadow bottom schools col card mx-2 p-1">
-            <h4 class="text-center">School Interests</h4>            
+            <h4 className="text-center">School Interests</h4>            
             <ul>
               <li className="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                <label class="form-check-label" for="exampleCheck1">Boston College</label>
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                <label className="form-check-label" for="exampleCheck1">Boston College</label>
               </li>
               <li className="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                <label class="form-check-label" for="exampleCheck1">Boston University</label>
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                <label className="form-check-label" for="exampleCheck1">Boston University</label>
               </li>
               <li className="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                <label class="form-check-label" for="exampleCheck1">Harvard</label>
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                <label className="form-check-label" for="exampleCheck1">Harvard</label>
               </li>
               <li className="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                <label class="form-check-label" for="exampleCheck1">MIT</label>
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                <label className="form-check-label" for="exampleCheck1">MIT</label>
               </li>
               <li className="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                <label class="form-check-label" for="exampleCheck1">Northeastern</label>
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                <label className="form-check-label" for="exampleCheck1">Northeastern</label>
               </li>
               <li className="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                <label class="form-check-label" for="exampleCheck1">Suffolk</label>
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                <label className="form-check-label" for="exampleCheck1">Suffolk</label>
               </li>
               <li className="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                <label class="form-check-label" for="exampleCheck1">UMass Amherst</label>
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                <label className="form-check-label" for="exampleCheck1">UMass Amherst</label>
               </li>
             </ul>
-            <button type="submit" class=" mx-5 mb-2 btn btn-primary btn-sm">Update Interests</button>
+            <button type="submit" className=" mx-5 mb-2 btn btn-primary btn-sm">Update Interests</button>
           </div>
 
           <div className="col-1"></div>
 
           <div className="shadow bottom preferences col card mx-2 p-1">
-            <h4 class="text-center">School Preferences </h4>
-            <h5 class="ms-4">Size</h5>
+            <h4 className="text-center">School Preferences </h4>
+            <h5 className="ms-4">Size</h5>
             <ul>
               <li className="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                <label class="form-check-label" for="exampleCheck1">Less than 10,000 Students</label>
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                <label className="form-check-label" for="exampleCheck1">Less than 10,000 Students</label>
               </li>
               <li className="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                <label class="form-check-label" for="exampleCheck1">10,000 to 20,000 Students</label>
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                <label className="form-check-label" for="exampleCheck1">10,000 to 20,000 Students</label>
               </li>
               <li className="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                <label class="form-check-label" for="exampleCheck1">more than 20,000 Students</label>
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                <label className="form-check-label" for="exampleCheck1">more than 20,000 Students</label>
               </li>
             </ul>
-            <h5 class="ms-4">Cost</h5>
-            <div class="range mx-5">
-              <input type="range" class="form-range" min="0" max="80000" step="5000" />
+            <h5 className="ms-4">Cost</h5>
+            <div className="range mx-5">
+              <input type="range" className="form-range" min="0" max="80000" step="5000" />
             </div>
-            <h5 class="ms-4">Location</h5>
+            <h5 className="ms-4">Location</h5>
             <ul>
               <li className="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                <label class="form-check-label" for="exampleCheck1">Urban</label>
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                <label className="form-check-label" for="exampleCheck1">Urban</label>
               </li>
               <li className="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                <label class="form-check-label" for="exampleCheck1">Suburban</label>
+                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                <label className="form-check-label" for="exampleCheck1">Suburban</label>
               </li>
             </ul>
-            <button type="submit" class="mx-5 mb-2 btn btn-primary btn-sm">Update Preferences</button>
+            <button type="submit" className="mx-5 mb-2 btn btn-primary btn-sm">Update Preferences</button>
           </div>
         </div>
       </div>
