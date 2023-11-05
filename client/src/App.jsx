@@ -17,7 +17,7 @@ axios.defaults.baseURL = "http://localhost:3000";
 const LayOut = () => {
   return (
     <>
-      <div class="top-header">
+      <div className="top-header">
         <Header />
       </div>
       <Outlet />

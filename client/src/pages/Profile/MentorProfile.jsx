@@ -32,53 +32,53 @@ function About() {
 
           <div className="shadow bottom col card mx-2 p-1 h-auto">
             <div className="basic">
-              <h4 class="text-center">Information</h4>
-              <p class="mb-3"><b>Name: </b>Jane Doe </p>
-              <p class="mb-2"><b>Email: </b>doeja@bc.edu </p>
-              <span class="mt-1 major"><b>Major: </b>Communications </span>
+              <h4 className="text-center">Information</h4>
+              <p className="mb-3"><b>Name: </b>Jane Doe </p>
+              <p className="mb-2"><b>Email: </b>doeja@bc.edu </p>
+              <span className="mt-1 major"><b>Major: </b>Communications </span>
             </div>
-            <button type="submit" class=" mx-5 mb-2 btn btn-primary btn-sm">Edit Information</button>
+            <button type="submit" className=" mx-5 mb-2 btn btn-primary btn-sm">Edit Information</button>
           </div>
 
           <div className="col-1"></div>
 
           <div className="shadow bottom schools col card mx-2 p-1 mb-2">
-            <h4 class="text-center">College Information</h4>            
-            <p class="m-2"> School: Boston College </p>
-            <p class="m-2"> Size: 9, 484 </p>
-            <p class="m-2"> Location: Chestnut Hill, MA</p>
-            <p class="m-2"> Type: Private </p>
-            <p class="major m-2"> Popular Majors: Business, Computer Science, Economics, Psychology </p>
-            <p class="m-2"> Cost: $80,658 </p>
+            <h4 className="text-center">College Information</h4>            
+            <p className="m-2"> School: Boston College </p>
+            <p className="m-2"> Size: 9, 484 </p>
+            <p className="m-2"> Location: Chestnut Hill, MA</p>
+            <p className="m-2"> Type: Private </p>
+            <p className="major m-2"> Popular Majors: Business, Computer Science, Economics, Psychology </p>
+            <p className="m-2"> Cost: $80,658 </p>
           </div>
 
           <div className="col-1"></div>
 
           <div className="shadow bottom preferences col card mx-2 p-1">
-            <h4 class="text-center"> Preferences </h4>
-            <h5 class="ms-4">Availability</h5>
+            <h4 className="text-center"> Preferences </h4>
+            <h5 className="ms-4">Availability</h5>
             <ul>
               <li className="form-check">
-                <label class="form-check-label" for="exampleCheck1"> Reading Advice </label>
+                <label className="form-check-label" for="exampleCheck1"> Reading Advice </label>
               </li>
               <li className="form-check">
-                <label class="form-check-label" for="exampleCheck1"> General Advice </label>
+                <label className="form-check-label" for="exampleCheck1"> General Advice </label>
               </li>
               <li className="form-check">
-                <label class="form-check-label" for="exampleCheck1"> Zoom Call </label>
+                <label className="form-check-label" for="exampleCheck1"> Zoom Call </label>
               </li>
             </ul>
-            <h5 class="ms-4">Involvement</h5>
-            <div class="range mx-5">
+            <h5 className="ms-4">Involvement</h5>
+            <div className="range mx-5">
               <ul>
                 <li>
-                  <label class="form-check-label" for="exampleCheck1"> BCCSS </label>
+                  <label className="form-check-label" for="exampleCheck1"> BCCSS </label>
                 </li>
                 <li>
-                  <label class="form-check-label" for="exampleCheck1"> Club Frisbee </label>
+                  <label className="form-check-label" for="exampleCheck1"> Club Frisbee </label>
                 </li>
                 <li>
-                  <label class="form-check-label" for="exampleCheck1"> For Boston </label>
+                  <label className="form-check-label" for="exampleCheck1"> For Boston </label>
                 </li>
               </ul>
             </div>
