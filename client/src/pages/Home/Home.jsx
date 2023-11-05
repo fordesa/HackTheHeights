@@ -1,4 +1,5 @@
 import "./Home.css";
+
 import bellPhoto from "./active.png"
 import chatPhoto from "./chat.png"
 import profilePhoto from "../Profile/profile.jpg"
@@ -7,6 +8,20 @@ import mentorIcon from "./mentoring.png"
 import videoIcon from "./cam-recorder.png"
 import essayIcon from "./wirte.png"
 import {Link} from "react-router-dom"
+
+import axios from "axios";
+
+const handleLogin = () => {
+  axios
+    .get("/profile", { withCredentials: true })
+    .then((response) => {
+      console.log(response.data);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+};
+
 const Home = () => {
   return (
     <main className="home-main">
@@ -17,8 +32,7 @@ const Home = () => {
 
 function About() {
   return (
-    <>
-      
+    <>      
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -296,6 +310,8 @@ function About() {
             </div>
             </div>
       
+//       <h1>High School Networking App</h1>
+//       <button onClick={handleLogin}>Login</button>
     </>
   );
 }

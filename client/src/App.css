@@ -1,2 +1,10 @@
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.015); }
+
+.top-header {
+  height: 60px;
+}
+
+.top-header nav{
+  background: white;
+}
