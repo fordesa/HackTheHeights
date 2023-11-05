@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const StudentProfile = () => {
   return (
-    <main className="student-profile-main">
+    <main className="student-profile-main py-3">
       <About />
     </main>
   );
@@ -17,34 +17,105 @@ const StudentProfile = () => {
 function About({user}) {
   return (
     <>
-      <div className="w-100 h-25 pd-1 topnav row align-items-center">
-        <Link to={"/"} className="link col-sm-1 text-center"><img src={homePhoto} className="photos"/></Link>
-        <input className="fields col-sm-4" placeholder="Name"/>
-        <select className="fields col-sm-3"> 
+      {/* <div className="w-auto topnav">
+        <Link to={"/"} className="link"><img src={homePhoto} className="photos"/></Link>
+        <input className="fields" placeholder="Name"/>
+        <select className="fields"> 
           <option value="BC"> Boston College </option>
           <option value="BU"> Boston University </option>
           <option value="NEU"> Northeastern </option>
         </select>
-        <Link to={""} className="link col-sm-2 text-center p-0"> <button className="fields w-90"> Search </button> </Link>
-        <img src={profilePhoto} className="photos col-sm-1"/>
-        <img src={networkPhoto} className="photos col-sm-1"/>
-      </div>
-      <div className="col-sm-12 w-auto content">
-        <div className="upper w-100">
-          <img className="top" src={collegeBanner}/>
-          <img src={collegePhoto} className="profileImage"/>
-        </div>
-        <div className="bottom w-100 row">
-          <div className="basic col-sm-3 align-items-center">
-            <p className="info"> Jane Doe <br/>
-               doeja@bc.edu <br/>
-               Computer Science </p>
+        <Link to={"/search"} className="link"> <button className="fields"> Search </button> </Link>
+        <img src={profilePhoto} className="endPhotos"/>
+        <img src={networkPhoto} className="endPhotos"/>
+      </div> */}
+      <div className="content rounded-3 mx-3 pb-2">
+        <img className="top rounded-3 shadow" src={collegeBanner}/>
+        <img src={collegePhoto} className="profileImage rounded-circle border border-primary border-5"/>
+        <div className="d-flex m-3">
+
+          <div className="shadow bottom col card mx-2 p-1 h-auto">
+            <span className="basic">
+              <h4 class="text-center">Information</h4>
+              <p class="mb-3"><b>Name:<br /> </b>Jane Doe </p>
+              <p class="mb-3"><b>Email:<br /> </b>doeja@bc.edu </p>
+              <p><b>Major Interest:<br /> </b>Computer Science </p>
+            </span>
+            <button type="submit" class=" mx-5 mb-2 btn btn-primary btn-sm">Edit Information</button>
           </div>
-          <div className="schools col-sm-4">
-            <p> Interested Schools </p>
+
+          <div className="col-1"></div>
+
+          <div className="shadow bottom schools col card mx-2 p-1">
+            <h4 class="text-center">School Interests</h4>            
+            <ul>
+              <li className="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">Boston College</label>
+              </li>
+              <li className="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">Boston University</label>
+              </li>
+              <li className="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">Harvard</label>
+              </li>
+              <li className="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">MIT</label>
+              </li>
+              <li className="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">Northeastern</label>
+              </li>
+              <li className="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">Suffolk</label>
+              </li>
+              <li className="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">UMass Amherst</label>
+              </li>
+            </ul>
+            <button type="submit" class=" mx-5 mb-2 btn btn-primary btn-sm">Update Interests</button>
           </div>
-          <div className="preferences col-sm-4">
-            <p> School Preferences </p>
+
+          <div className="col-1"></div>
+
+          <div className="shadow bottom preferences col card mx-2 p-1">
+            <h4 class="text-center">School Preferences </h4>
+            <h5 class="ms-4">Size</h5>
+            <ul>
+              <li className="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">Less than 10,000 Students</label>
+              </li>
+              <li className="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">10,000 to 20,000 Students</label>
+              </li>
+              <li className="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">more than 20,000 Students</label>
+              </li>
+            </ul>
+            <h5 class="ms-4">Cost</h5>
+            <div class="range mx-5">
+              <input type="range" class="form-range" min="0" max="80000" step="5000" />
+            </div>
+            <h5 class="ms-4">Location</h5>
+            <ul>
+              <li className="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">Urban</label>
+              </li>
+              <li className="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">Suburban</label>
+              </li>
+            </ul>
+            <button type="submit" class="mx-5 mb-2 btn btn-primary btn-sm">Update Preferences</button>
           </div>
         </div>
       </div>

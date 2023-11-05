@@ -18,3 +18,9 @@
 .text-container {
   height: max-content;
 }
+
+p {
+  font-size: medium;
+  line-height: 1.5;
+  margin: 0 !important;
+}
